@@ -1,0 +1,304 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans"
+}
+
+a {
+    text-decoration: none;
+}
+
+/*menu-info*/
+.menu-info-bg {
+    background:#FF9C4A;
+}
+
+.menu-info {
+    height: 40px;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}    
+ 
+.menu-info a {
+    color: #000;
+}
+
+.menu-info-left {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-info-center {
+    margin-right: auto;
+    margin-left: 17px;
+}
+
+.menu-info-right {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.menu-info-right ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menu-info-right a {
+    font-size: 1.25em;
+    display: block;
+    padding: 5px;
+}
+.menu-info a:hover {
+    color: #FFF;
+    transition: 0.4s;
+}
+
+/*menu-navbar*/
+.menu-navbar-bg {
+    background:#000;
+}
+.menu-navbar {
+    height: 35px;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.menu-navbar {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.menu-navbar a {
+    color: #FFF;
+}
+.menu-navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.menu-navbar a {
+    padding: 5px;
+}
+/*Pq active não começa selecionado?*/
+.active{
+    color: #FF9C4A;
+}
+.menu-navbar a:hover {
+    color: #FF9C4A;
+    transition: 0.4s;
+}
+.menu-navbar-left li {
+    border-right: solid 1px honeydew;
+}
+
+/* É o BLOG do menu de navegacao - Tentei tirar a borda deste item
+tirando a borda depois de criar um id só pra ele ou pintando a
+borda da cor do fundo hehehe*/
+#no-border {
+    border-right: solid 1px #000;
+}
+
+body {
+    background: #d3d3d3;
+}
+
+.content-bg {
+    background: white;
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+/*Pokémons container*/
+.content-left {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 20px;
+}
+
+.container-card {
+    width: 130px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid #d3d3d3;
+    overflow: hidden;
+}
+
+.img {
+    height: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+    
+}
+
+.container-card-title {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 6px 2px 2px 2px;
+    text-align: center;
+}
+
+/* não estou conseguindo alinhar o "botão"
+Creio que seja porque ele é um link*/
+
+.container-card-btn {
+    font-size: 10px;
+    color: white;
+    padding: 6px 20px;
+    background: #77DD77;
+    border-radius: 2%;
+    text-align: center;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.container-card-p-gray {
+    font-size: 13px;
+    margin: 2px;
+    color: gray;
+    text-decoration: line-through;
+    text-align: center;
+}
+
+.container-card-p-green {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 2px;
+    color: green;
+    text-align: center;
+}
+
+/* Aside */
+.content-right {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    padding: 0px;
+}
+
+.banner-ad {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.content-right-list {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.content-right-list p {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.img-list {
+    width: 30px;
+}
+
+.content-right-newsletter {
+    background:  #d3d3d3;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    
+}
+
+.content-right-newsletter input {
+    width: 150px;
+    height: 30px;
+}
+
+.content-right-newsletter p {
+    font-size: 12px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* Seu e-mail */
+form p {
+    font-size: 10px;
+    margin: 5px;
+    text-align: left;
+}
+
+/* Footer */
+.footer-bg {
+    background: #000;
+    height: 100%;
+}
+
+.footer-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #FFF;
+}
+
+.footer-container ul {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.footer-center {
+    margin-right: auto;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.footer-right ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.footer-right a {
+    font-size: 1.25em;
+    display: block;
+    padding: 5px;
+    color: #FFF;
+}
+.footer-right a:hover {
+    color: gray;
+    transition: 0.4s;
+}
+
+div .footer-copy {
+    width: 100%;
+}
+
+.footer-copy p {
+    font-size: 10px;
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
