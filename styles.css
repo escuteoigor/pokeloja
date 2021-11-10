@@ -137,6 +137,8 @@ body {
     margin: 10px;
     border: 2px solid #d3d3d3;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .img {
@@ -166,7 +168,7 @@ Creio que seja porque ele é um link*/
     border-radius: 2%;
     text-align: center;
     margin-top: 6px;
-    text-align: center;
+    
 }
 
 .container-card-p-gray {
