@@ -90,22 +90,31 @@ a {
     padding: 5px;
 }
 /*Pq active não começa selecionado?*/
-.active{
-    color: #FF9C4A;
+.menu-navbar a.active{
+    background-color: #FF9C4A;
 }
 .menu-navbar a:hover {
     color: #FF9C4A;
+    background-color: #000;
     transition: 0.4s;
 }
 .menu-navbar-left li {
     border-right: solid 1px honeydew;
 }
 
+.menu-navbar-left li:first-child {
+    border-right: none;
+}
+
+.menu-navbar-left li:last-child {
+    border-right: none;
+}
+
 /* É o BLOG do menu de navegacao - Tentei tirar a borda deste item
 tirando a borda depois de criar um id só pra ele ou pintando a
 borda da cor do fundo hehehe*/
 #no-border {
-    border-right: solid 1px #000;
+    border-right: solid 2px #000;
 }
 
 body {
@@ -168,7 +177,16 @@ Creio que seja porque ele é um link*/
     border-radius: 2%;
     text-align: center;
     margin-top: 6px;
-    
+}
+
+.container-card-btn2 {
+    font-size: 10px;
+    color: white;
+    border-color: none;
+    background: #77DD77;
+    border-radius: 2%;
+    text-align: center;
+    margin-top: 6px;
 }
 
 .container-card-p-gray {
@@ -209,12 +227,16 @@ Creio que seja porque ele é um link*/
     width: 200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .content-right-list p {
     border-bottom: 1px solid #d3d3d3;
+}
+
+.content-right-list p:last-child {
+    border-bottom: none;
 }
 
 .img-list {
