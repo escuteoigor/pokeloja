@@ -222,7 +222,7 @@ Creio que seja porque ele é um link*/
 
 .banner-ad {
     width: 200px;
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -331,4 +331,17 @@ div .footer-copy {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    .content-left {
+        width: 100%;
+}
+}
+
+@media (max-width: 700px) {
+    .content-right {
+        display: contents;
+        margin: 20px 10px;
+    }
 }
