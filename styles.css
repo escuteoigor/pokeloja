@@ -15,8 +15,8 @@ a {
 }
 
 .menu-info {
-    height: 40px;
-    max-width: 960px;
+    height: 100%;
+    max-width: 68.5714rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -29,18 +29,18 @@ a {
 }
 
 .menu-info-left {
-    font-size: 26px;
+    font-size: 1.85rem;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .menu-info-center {
     margin-right: auto;
-    margin-left: 17px;
+    margin-left: 1.21rem;
 }
 
 .menu-info-right {
-    font-size: 10px;
+    font-size: 0.71rem;
     text-transform: uppercase;
 }
 
@@ -53,7 +53,7 @@ a {
 .menu-info-right a {
     font-size: 1.25em;
     display: block;
-    padding: 5px;
+    padding: 0.35rem;
 }
 .menu-info a:hover {
     color: #FFF;
@@ -66,7 +66,7 @@ a {
 }
 .menu-navbar {
     height: 35px;
-    max-width: 960px;
+    max-width: 68.5714rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -74,7 +74,7 @@ a {
     align-items: center;
 }
 .menu-navbar {
-    font-size: 12px;
+    font-size: 0.83rem;
     text-transform: uppercase;
 }
 
@@ -87,7 +87,7 @@ a {
     list-style: none;
 }
 .menu-navbar a {
-    padding: 5px;
+    padding: 0.35rem;
 }
 /*Pq active não começa selecionado?*/
 .menu-navbar a.active{
@@ -123,7 +123,7 @@ body {
 
 .content-bg {
     background: white;
-    max-width: 960px;
+    max-width: 68.5714rem;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -136,61 +136,38 @@ body {
     width: 65%;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
-    margin: 20px;
+    margin: 0.85rem;
 }
 
 .container-card {
-    width: 130px;
-    height: 200px;
-    margin: 10px;
+    width: 9.28rem;
+    height: 14.28rem;
+    margin: 0.71rem;
     border: 2px solid #d3d3d3;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-self: normal;  
+    align-items: center;
 }
 
 .img {
     height: 40%;
-    display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 6px;
-    
+    margin-top: 0.55rem;
 }
 
 .container-card-title {
-    font-size: 13px;
+    font-size: 0.85rem;
     font-weight: bold;
-    margin: 6px 2px 2px 2px;
+    margin: 0.42rem 0.21rem 0.21rem 0.21rem;
     text-align: center;
-}
-
-/* não estou conseguindo alinhar o "botão"
-Creio que seja porque ele é um link*/
-
-.container-card-btn {
-    font-size: 10px;
-    color: white;
-    padding: 6px 20px;
-    background: #77DD77;
-    border-radius: 2%;
-    text-align: center;
-    margin-top: 6px;
-}
-
-.container-card-btn2 {
-    font-size: 10px;
-    color: white;
-    border-color: none;
-    background: #77DD77;
-    border-radius: 2%;
-    text-align: center;
-    margin-top: 6px;
 }
 
 .container-card-p-gray {
-    font-size: 13px;
+    font-size: 0.85rem;
     margin: 2px;
     color: gray;
     text-decoration: line-through;
@@ -198,12 +175,41 @@ Creio que seja porque ele é um link*/
 }
 
 .container-card-p-green {
-    font-size: 13px;
+    font-size: 0.85rem;
     font-weight: bold;
     margin: 2px;
     color: green;
     text-align: center;
 }
+
+/* não estou conseguindo alinhar o "botão"
+Creio que seja porque ele é um link*/
+
+.container-card .container-card-btn {
+    display: inline-block;
+    background: #77DD77;
+    font-size: 0.85rem;
+    padding: 0.50rem 2.60rem;
+    color: white;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+
+/*
+.container-card-btn {
+    position: relative;
+    font-size: 0.85rem;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    background: #77DD77;
+    text-align: center;
+    margin-bottom: 1px;
+}
+*/
 
 /* Aside */
 .content-right {
