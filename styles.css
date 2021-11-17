@@ -16,7 +16,7 @@ a {
 
 .menu-info {
     height: 100%;
-    max-width: 68.5714rem;
+    max-width: 960px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -29,9 +29,10 @@ a {
 }
 
 .menu-info-left {
-    font-size: 1.85rem;
+    font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
+    padding: 4px;
 }
 
 .menu-info-center {
@@ -40,7 +41,6 @@ a {
 }
 
 .menu-info-right {
-    font-size: 0.71rem;
     text-transform: uppercase;
 }
 
@@ -51,7 +51,7 @@ a {
 }
 
 .menu-info-right a {
-    font-size: 1.25em;
+    font-size: 12px;
     display: block;
     padding: 0.35rem;
 }
@@ -66,7 +66,7 @@ a {
 }
 .menu-navbar {
     height: 35px;
-    max-width: 68.5714rem;
+    max-width: 960px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -74,7 +74,7 @@ a {
     align-items: center;
 }
 .menu-navbar {
-    font-size: 0.83rem;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
@@ -110,12 +110,6 @@ a {
     border-right: none;
 }
 
-/* É o BLOG do menu de navegacao - Tentei tirar a borda deste item
-tirando a borda depois de criar um id só pra ele ou pintando a
-borda da cor do fundo hehehe*/
-#no-border {
-    border-right: solid 2px #000;
-}
 
 body {
     background: #d3d3d3;
@@ -123,7 +117,7 @@ body {
 
 .content-bg {
     background: white;
-    max-width: 68.5714rem;
+    max-width: 960px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -133,16 +127,16 @@ body {
 .content-left {
     display: flex;
     flex-wrap: wrap;
-    width: 65%;
+    width: 68%;
     justify-content: space-between;
     align-items: center;
-    margin: 0.85rem;
+    margin: 12px;
 }
 
 .container-card {
-    width: 9.28rem;
-    height: 14.28rem;
-    margin: 0.71rem;
+    width: 140px;
+    height: 220px;
+    margin: 10px;
     border: 2px solid #d3d3d3;
     overflow: hidden;
     display: flex;
@@ -156,18 +150,18 @@ body {
     height: 40%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0.55rem;
+    margin-top: 7px;
 }
 
 .container-card-title {
-    font-size: 0.85rem;
+    font-size: 12px;
     font-weight: bold;
-    margin: 0.42rem 0.21rem 0.21rem 0.21rem;
+    margin: 4px;
     text-align: center;
 }
 
 .container-card-p-gray {
-    font-size: 0.85rem;
+    font-size: 12px;
     margin: 2px;
     color: gray;
     text-decoration: line-through;
@@ -175,21 +169,18 @@ body {
 }
 
 .container-card-p-green {
-    font-size: 0.85rem;
+    font-size: 12px;
     font-weight: bold;
     margin: 2px;
     color: green;
     text-align: center;
 }
 
-/* não estou conseguindo alinhar o "botão"
-Creio que seja porque ele é um link*/
-
 .container-card .container-card-btn {
     display: inline-block;
     background: #77DD77;
-    font-size: 0.85rem;
-    padding: 0.50rem 4rem;
+    font-size: 12px;
+    padding: 6px 40px;
     color: white;
     text-align: center;
     color: white;
@@ -198,24 +189,11 @@ Creio que seja porque ele é um link*/
     margin-bottom: 10px;
 }
 
-
-/*
-.container-card-btn {
-    position: relative;
-    font-size: 0.85rem;
-    color: white;
-    padding: 0.5rem 1.5rem;
-    background: #77DD77;
-    text-align: center;
-    margin-bottom: 1px;
-}
-*/
-
 /* Aside */
 .content-right {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 28%;
     align-items: center;
     padding: 0px;
 }
@@ -239,6 +217,13 @@ Creio que seja porque ele é um link*/
 
 .content-right-list p {
     border-bottom: 1px solid #d3d3d3;
+    margin: 13px;
+    font-size: 18px;    
+}
+
+.content-right-list p:first-child {
+    margin-bottom: 12px;
+    font-size: 13px;
 }
 
 .content-right-list p:last-child {
@@ -246,35 +231,50 @@ Creio que seja porque ele é um link*/
 }
 
 .img-list {
-    width: 30px;
+    width: 20px;
 }
 
 .content-right-newsletter {
     background:  #d3d3d3;
     width: 200px;
-    height: 200px;
+    height: 140px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-    
+}
+
+.ph {
+    text-align: center;
+}
+
+.title-newsletter p {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
 }
 
 .content-right-newsletter input {
-    width: 150px;
-    height: 30px;
-}
-
-.content-right-newsletter p {
-    font-size: 12px;
-    margin: 5px;
-    text-align: center;
+    width: 170px;
+    height: 35px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border: 0px;
 }
 
 /* Seu e-mail */
 form p {
     font-size: 10px;
-    margin: 5px;
+    margin-left: 26px;
+    margin-bottom: 10px;
     text-align: left;
+}
+
+.btn-newsletter {
+    background: #007FFF;
+    width: 170px;
+    height: 20px;
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -302,6 +302,21 @@ form p {
     margin-right: auto;
     margin-left: 40px;
     margin-top: 20px;
+    
+}
+
+.footer-center p {
+    padding: 4px;
+    border-bottom: 1px solid #FFF;
+}
+
+.footer-center p:first-child {
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+
+.footer-center p:last-child {
+    border-bottom: 0px;
 }
 
 .footer-right ul {
