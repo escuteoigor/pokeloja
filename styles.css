@@ -196,6 +196,7 @@ body {
     width: 28%;
     align-items: center;
     padding: 0px;
+    margin-top: 15px;
 }
 
 .banner-ad {
@@ -240,6 +241,7 @@ body {
     height: 140px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
     margin-top: 15px;
 }
 
@@ -351,12 +353,16 @@ div .footer-copy {
 @media (max-width: 700px) {
     .content-left {
         width: 100%;
+    }
+    
+    .content-bg {
+        padding-bottom: 15px;
+    
 }
 }
 
 @media (max-width: 700px) {
     .content-right {
         display: contents;
-        margin: 20px 10px;
-    }
+}
 }
